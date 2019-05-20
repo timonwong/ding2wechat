@@ -10,3 +10,10 @@ go:
 script:
   - make
   - git diff --exit-code
+
+branches:
+  only:
+    - master
+
+notifications:
+  email: false
