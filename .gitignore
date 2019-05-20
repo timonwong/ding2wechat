@@ -1,7 +1,9 @@
 /.idea
 /.vscode
 /.build
+/vendor
 
 *.tar.gz
 coverage.txt
 /ding2wechat
+/my.yml
