@@ -1,3 +1,5 @@
+# Demo config
+
 receivers:
   - name: without_mention
     targets:

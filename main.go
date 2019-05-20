@@ -30,7 +30,7 @@ import (
 )
 
 var (
-	configFile    = kingpin.Flag("config.file", "Path to configuration file.").Default("ding2wechat.yml").String()
+	configFile    = kingpin.Flag("config.file", "Path to configuration file.").Default("config.yml").String()
 	listenAddress = kingpin.Flag("web.listen-address", "Address to listen on for web interface.").Default(":8080").String()
 	dryRun        = kingpin.Flag("dry-run", "Only verify configuration is valid and exit.").Default("false").Bool()
 )
