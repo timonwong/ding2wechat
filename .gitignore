@@ -1,0 +1,7 @@
+/.idea
+/.vscode
+/.build
+
+*.tar.gz
+coverage.txt
+/ding2wechat
