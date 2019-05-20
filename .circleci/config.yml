@@ -60,7 +60,7 @@ jobs:
       - run: make docker-publish
       - run: make docker-publish DOCKER_REPO=quay.io/timonwong
       - run: make docker-manifest
-      - run: make docker-publish DOCKER_REPO=quay.io/timonwong
+      - run: make docker-manifest DOCKER_REPO=quay.io/timonwong
 
   docker_hub_release_tags:
     executor: golang
