@@ -107,6 +107,11 @@ func ReceiverHandler(conf *config.Config) http.HandlerFunc {
 	}
 
 	return func(w http.ResponseWriter, r *http.Request) {
+		if r.Method != "POST" {
+			http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
+			return
+		}
+
 		qs := r.URL.Query()
 		receiverName := qs.Get("name")
 
