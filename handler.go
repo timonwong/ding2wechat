@@ -172,6 +172,6 @@ func ReceiverHandler(conf *config.Config) http.HandlerFunc {
 			}()
 		}
 
-		w.Write([]byte("ok"))
+		w.Write([]byte(`{"errcode":0,"errmsg":"ok"}`))
 	}
 }
